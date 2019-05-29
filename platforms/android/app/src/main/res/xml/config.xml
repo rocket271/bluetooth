@@ -26,12 +26,15 @@
     <feature name="InAppBrowser">
         <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
     </feature>
+    <feature name="Capture">
+        <param name="android-package" value="org.apache.cordova.mediacapture.Capture" />
+    </feature>
     <feature name="BluetoothSerial">
         <param name="android-package" value="com.megster.cordova.BluetoothSerial" />
     </feature>
-    <name>helloworld</name>
+    <name>BLUETOOTH SCANNER</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        Bluetooth scanner is designed to track crowd flow.
     </description>
     <author email="support@phonegap.com" href="http://phonegap.com">
         PhoneGap Team

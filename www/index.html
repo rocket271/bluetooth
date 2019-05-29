@@ -45,34 +45,37 @@
 <body>
     <div class="app">
     	<div id="list_blue">
-    	
+          START BLUET
     	</div>
         <script>
-        	
+/*
         	function get_list_bluetooth(){
         		if (typeof bluetoothSerial !== 'undefined') {
         			bluetoothSerial.enable();
         			bluetoothSerial.list(
                 		function(results) {
                 			console.log(results);
-                    		
+                      var str=document.getElementById('list_blue').innerHTML;
+                      str=JSON.stringify(results)+'<br>';
+                      document.getElementById('list_blue').innerHTML=str;
+
                 		},
                 		function(error) {
                 			console.log(error);
-                    		/*app.display(JSON.stringify(error));*/
+                    		
                 		}
             		);
-        			
-        			
+
+
         		}
-        		else{
+
         			setTimeout(function(){ get_list_bluetooth(); }, 1000);
-        		}
+
         	}
         	document.addEventListener("deviceready", get_list_bluetooth(), false);
-        	
-        	
-        	
+
+*/
+
         </script>
     </div>
     <script type="text/javascript" src="cordova.js"></script>

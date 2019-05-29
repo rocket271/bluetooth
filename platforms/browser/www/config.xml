@@ -6,9 +6,9 @@
     <feature name="Device">
         <param name="browser-package" value="Device" />
     </feature>
-    <name>helloworld</name>
+    <name>BLUETOOTH SCANNER</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        Bluetooth scanner is designed to track crowd flow.
     </description>
     <author email="support@phonegap.com" href="http://phonegap.com">
         PhoneGap Team
