@@ -32,7 +32,7 @@
     <feature name="BluetoothSerial">
         <param name="android-package" value="com.megster.cordova.BluetoothSerial" />
     </feature>
-    <name>BLUETOOTH SCANNER</name>
+    <name>Bluetooth Scanner</name>
     <description>
         Bluetooth scanner is designed to track crowd flow.
     </description>

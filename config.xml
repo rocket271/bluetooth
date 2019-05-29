@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.phonegap.helloworld" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>BLUETOOTH SCANNER</name>
+    <name>Bluetooth Scanner</name>
     <description>
         Bluetooth scanner is designed to track crowd flow.
     </description>
@@ -106,4 +106,5 @@
         <allow-intent href="itms-apps:*" />
     </platform>
     <plugin name="cordova-plugin-bluetooth-serial" spec="~0.4.7" />
+    
 </widget>
