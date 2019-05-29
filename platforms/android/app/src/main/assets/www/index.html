@@ -55,9 +55,13 @@
         			bluetoothSerial.list(
                 		function(results) {
                 			console.log(results);
-                      var str=document.getElementById('list_blue').innerHTML;
-                      str=JSON.stringify(results)+'<br>';
-                      document.getElementById('list_blue').innerHTML=str;
+                      str2='';
+                      results.forEach(function(element) {
+                          console.log(element);
+                          str2=str2+JSON.stringify(element)+'<br>';
+                      });
+
+                      document.getElementById('list_blue').innerHTML=str2;
 
                 		},
                 		function(error) {
