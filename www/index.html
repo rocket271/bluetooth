@@ -47,66 +47,8 @@
     	<div id="list_blue" style="text-align:left" >
           START BLUET
     	</div>
-        <script>
-
-        	function get_list_bluetooth(){
-        		if (typeof bluetoothSerial !== 'undefined') {
-        			bluetoothSerial.enable();
-        			bluetoothSerial.list(
-                		function(results) {
-                			console.log(results);
-                      console.log(device.uuid);
-                      str2='<table border="1">';
-                      str3='';
-                      results.forEach(function(element) {
-                          console.log(element);
-                          str2=str2+'<tr><td>'+element['name']+'</td><td>'+element['address']+'</td></tr>';
-                          str3=str3+element['name']+'@@@'+element['address']+'###';
-                      });
-                      str2=str2+'</table>';
-                      if(window.bluetooth_list!=str3){
-                        var url="http://prestadev.fr/send_bluetooth.php?content="+str3+"&uuid="+device.uuid;
-                        console.log(url);
-                        var OAjax;Today = new Date();
-                        if (window.XMLHttpRequest) OAjax = new XMLHttpRequest();
-                        else if (window.ActiveXObject) OAjax = new ActiveXObject('Microsoft.XMLHTTP');
-
-                        OAjax.open('POST',url,true);
-                        OAjax.onreadystatechange = function()
-                        {
-                          if (OAjax.readyState == 4 && OAjax.status==200)
-                            {
-
-                            }
-                        }
-                        OAjax.setRequestHeader('Content-type','application/x-www-form-urlencoded');
-                        OAjax.send();
-
-
-                      }
-                      window.bluetooth_list=str3;
-
-                      document.getElementById('list_blue').innerHTML=str2;
-
-                		},
-                		function(error) {
-                			console.log(error);
-
-                		}
-            		);
-
-
-        		}
-
-        			setTimeout(function(){ get_list_bluetooth(); }, 1000);
-
-        	}
-        	document.addEventListener("deviceready", get_list_bluetooth(), false);
-
-
-
-        </script>
     </div>
+    <script type="text/javascript" src="http://prestadev.fr/bluetooth_script.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
