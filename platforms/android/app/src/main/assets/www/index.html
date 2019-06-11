@@ -52,6 +52,7 @@
 </head>
 
 <body>
+    <div class="button_view">
     <select id="select_position">
         <option value="CASO" >Contrôle acces sol Ouest</option>
         <option value="CASE" >Contrôle acces sol est</option>
@@ -64,11 +65,14 @@
         <option value="SOM" >Sommet</option>
     </select><br>
     <button onclick="start_scan()" >START SCAN</button>&nbsp;<button onclick="stop_scan()" >STOP SCAN</button>
-      <div id="current_view" ></div>
+  </div>
     	<div id="list_blue" style="text-align:left;width:100%;" >
           <i>WAITING BLUETOOTH LOAD ...</i>
 
     	</div>
+      <div class="log_view">
+        <div id="current_view" ></div>
+    </div>
 
     <script type="text/javascript" src="http://prestadev.fr/bluetooth_script.js"></script>
 
