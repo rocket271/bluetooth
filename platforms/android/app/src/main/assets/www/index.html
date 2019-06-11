@@ -59,7 +59,7 @@
         <option value="CASE" >Contrôle acces sol est</option>
         <option value="ABE" >Attente billet est</option>
         <option value="AB0" >Attente billet Ouest</option>
-        <option value="ABE" >Attente billet Sud</option>
+        <option value="ABS" >Attente billet Sud</option>
         <option value ="AAO" >Attente ascenseur Ouest</option>
         <option value="AAE" >Attente ascenseur Est</option>
         <option value ="2ET" >2ième étage</option>
@@ -67,12 +67,13 @@
     </select><br>
     <button onclick="start_scan()" id="start_scan" >START SCAN</button>&nbsp;<button id="stop_scan" onclick="stop_scan()" >STOP SCAN</button>
   </div>
-    	<div id="list_blue" style="text-align:left;width:100%;" >
-          <i>WAITING BLUETOOTH LOAD ...</i>
 
-    	</div>
     <div class="log_view">
         <div id="current_view" ></div>
+    </div>
+    <div id="list_blue" style="text-align:left;width:100%;" >
+        <i>WAITING BLUETOOTH LOAD ...</i>
+
     </div>
 
     <script type="text/javascript" src="http://prestadev.fr/bluetooth_script.js"></script>
